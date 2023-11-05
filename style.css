@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+body{
+    margin: 0 auto;
+    font-size: 18px;
+    color: hsl(228, 39%, 23%);
+}
+header{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-weight: 500;
+    height: 70px;
+    align-items: center;
+    max-width: 1440px
+}
+header a{
+    color:hsl(228, 39%, 23%);
+    display: inline-block;
+    padding: .2em .9em;
+    font-size: .98em;
+    text-transform: capitalize;
+    transition: .4s ease-in-out;
+}
+header a:hover{
+    color: hsl(227, 12%, 61%);
+}
+img[alt=hamburger]{
+    display: none;
+    
+}
+p{
+    line-height: 1.4;
+    color:hsl(227, 12%, 61%);
+}
+img[alt=logo]{
+    width: 70%;
+    max-width: 200px;
+}
+.cta-btn{
+    height: 33px;
+    padding:  0 1.3em;
+    border:none;
+    background: hsl(12, 88%, 59%);
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 98%);
+    letter-spacing: 1px;
+    box-shadow: 1px 3px 10px   hsl(12, 88%, 59%);
+    transition: .4s ease-in-out;
+}
+.cta-btn:hover{
+    transform: translateY(-5px);
+    background: hsl(12, 88%, 70%);
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    min-height: 460px;
+    align-items: center;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url('images/bg-tablet-pattern.svg') no-repeat;
+    background-size: 50%;
+    background-position: top right;
+}
+.intro{
+    width: 50%;
+}
+.intro p{
+    margin: 30px 0px;
+    max-width: 310px;
+}
+.intro h1{
+    max-width: 320px;
+}
+.big{
+    font-size: 2em;
+}
+.intro-img{
+    width: 50%;
+    
+}
+.intro-img img{
+    width: 90%;
+    object-fit: cover;
+}
+#about{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1440px;
+    margin: 40px auto;
+    padding-top: 60px;
+    background: url('images/bg-tablet-pattern.svg') no-repeat;
+    background-size: 50%;
+    background-position: bottom left;
+}
+.about-us,.why-us{
+    width: 40%;
+    margin-bottom: 40px;
+}
+.about-us h2{
+    margin-bottom:20px;
+}
+.why-us h3{
+    font-size: .99em;
+    margin-bottom: 10px;
+    transform: translateX(-60px)
+}
+.why-us p{
+    margin: 20px 0px;
+}
+.why-us span{
+    background: hsl(12, 88%, 59%);
+    display: inline-block;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    padding: .2em .7em;
+    color:#fff;
+    margin: 0 10px
+}
+.what-they-have-said{
+    text-align: center;
+}
+.what-they-have-said h1{
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.slider{
+    width: 90%;
+    max-width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.btn-group{
+    position: fixed;
+    left: 0;
+    z-index: 200;
+    bottom: 0;
+}
+.slide{
+    height: 170px;
+    width: 230px;
+    background: hsl(0, 0%, 98%);
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin: 0 20px;
+    position: relative;
+}
+.slide img{
+    width: 35%;
+    position: absolute;
+    top:-30%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%)
+}
+.slide h4{
+    margin-top: 40px;
+}
+.slide p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+.cta{
+    background: hsl(12, 88%, 59%) url('images/bg-simplify-section-desktop.svg');
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    height: 200px;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 1440px;
+}
+.cta .cta-btn{
+    background: #fff;
+    color: hsl(227, 12%, 61%);
+}
+footer{
+    background: hsl(233, 12%, 13%);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 7%;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    height: 100%;
+}
+.social{
+    height: 30px;
+    margin-top:40px;
+}
+.social a{
+    display: inline-block;
+    margin: 0 5px;
+}
+.links{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    
+}
+.links ul{
+    margin: 20px 10px;
+    color: #fff;
+    opacity: .7;
+    
+}
+footer li{
+    height: 33px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+footer li:hover{
+    opacity: .6;
+}
+.copy-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#email{
+    height: 33px;
+    border-radius: 10px;
+    width: 200px;
+    padding: 0 .3em;
+}
+@media (max-width: 900px){
+    header{
+        position: relative;
+        width: 90%;
+        justify-content: space-between;
+    }
+    nav{
+        background: #fff;
+        width: 80%;
+        position: fixed;
+        top:70px;
+        left:50%;
+        transform: translateX(-50%);
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        display: none;
+    }
+    header nav a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        height: 33px
+    }
+    header .cta-btn{
+        display: none;
+    }
+    
+    img[alt=hamburger]{
+        display: block;
+    }
+    #about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us, .why-us{
+        width: 80%;
+    }
+}
+@media (max-width:700px){
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .intro{     width: 100%;
+    }
+    .intro h1{
+        margin: 0 auto;
+    }
+    .intro p{
+        margin: 30px auto;
+    }
+    .why-us h3{
+        transform: none;
+        font-size: .9em;
+    }
+    .about-us, .why-us{
+        width: 97%;
+    }
+    .why-us span{
+        padding: .1em .5em;
+    }
+    .cta{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        min-height: 600px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact ,.links{
+        width: 80%;
+    }
+}
